@@ -30,7 +30,7 @@ public class CategoriaResource {
 	private CategoriaRepository categoriaRepository;	
 	
 	@GetMapping
-	@PreAuthorize("hasAuthority('ROLE_PESQUISAR_CATEGORIA') and #oauth2.hasScope('read')")
+	//@PreAuthorize("hasAuthority('ROLE_PESQUISAR_CATEGORIA') and #oauth2.hasScope('read')")
 	public List<Categoria> listar(){		
 		return categoriaRepository.findAll();
 		
